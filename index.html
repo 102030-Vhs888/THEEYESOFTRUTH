@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Input Website</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            outline: none;
+            width: 250px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        input:focus {
+            border-color: #ffcc00;
+        }
+        .message {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <input type="text" id="userInput" placeholder="Enter code here">
+    <div class="message" id="responseMessage"></div>
+</div>
+
+<script>
+    document.getElementById('userInput').addEventListener('input', function () {
+        const inputValue = document.getElementById('userInput').value.trim().toLowerCase();
+        const responseMessage = document.getElementById('responseMessage');
+
+        if (inputValue === 'dragging_cnnp_vhs2') {
+            responseMessage.innerHTML = '<a href="https://www.jigsawplanet.com/?rc=play&pid=33e5431c444f" style="color: #ffcc00;">Click here to play the puzzle</a>';
+        } else if (inputValue === 'gppn_cnnp_vhs3') {
+            responseMessage.innerHTML = 'You have conquered this, now derive this foundation';
+        } else {
+            responseMessage.innerHTML = '';
+        }
+    });
+</script>
+
+</body>
+      </html>
