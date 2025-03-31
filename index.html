@@ -28,12 +28,14 @@
             width: 250px;
             margin-bottom: 20px;
             border-radius: 5px;
+            text-align: center;
         }
         input:focus {
             border-color: #ffcc00;
         }
         .message {
             font-size: 20px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -49,9 +51,9 @@
         const inputValue = document.getElementById('userInput').value.trim().toLowerCase();
         const responseMessage = document.getElementById('responseMessage');
 
-        if (inputValue === 'dragging_cnnp_vhs2') {
+        if (inputValue === 'dragging_cnnp_vhs2'.toLowerCase()) {
             responseMessage.innerHTML = '<a href="https://www.jigsawplanet.com/?rc=play&pid=33e5431c444f" style="color: #ffcc00;">Click here to play the puzzle</a>';
-        } else if (inputValue === 'gppn_cnnp_vhs3') {
+        } else if (inputValue === 'gppn_cnnp_vhs4'.toLowerCase()) {
             responseMessage.innerHTML = 'You have conquered this, now derive this foundation';
         } else {
             responseMessage.innerHTML = '';
@@ -60,4 +62,4 @@
 </script>
 
 </body>
-      </html>
+</html>
